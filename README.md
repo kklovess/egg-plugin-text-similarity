@@ -27,16 +27,16 @@ Description here.
 ## Install
 
 ```bash
-$ npm i egg-plugin-hello --save
+$ npm i egg-plugin-cosine-similarity --save
 ```
 
 ## Usage
 
 ```js
 // {app_root}/config/plugin.js
-exports.pluginHello = {
+exports.cosineSimilarity= {
   enable: true,
-  package: 'egg-plugin-hello',
+  package: 'egg-plugin-cosine-similarity',
 };
 ```
 
@@ -44,7 +44,7 @@ exports.pluginHello = {
 
 ```js
 // {app_root}/config/config.default.js
-exports.pluginHello = {
+exports.cosineSimilarity = {
 };
 ```
 
