@@ -27,7 +27,7 @@ Description here.
 ## Install
 
 ```bash
-$ npm i egg-plugin-cosine-similarity --save
+$ npm i git+https://kklovess:fan1507538@github.com/kklovess/egg-plugin-cosine-similarity.git --save
 ```
 
 ## Usage
