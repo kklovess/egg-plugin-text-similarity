@@ -20,9 +20,13 @@
 [download-image]: https://img.shields.io/npm/dm/egg-plugin-cosine-similarity.svg?style=flat-square
 [download-url]: https://npmjs.org/package/egg-plugin-cosine-similarity
 
-<!--
-Description here.
--->
+## 介紹
+
+##### 此插件为中文文本相似度计算插件，适用于egg框架。
+
+此插件使用了nodejieba，进行中文分词，然后计算文本词频，再计算空间向量，最后计算空间向量的余弦值，获得文本相似度。
+
+计算结果越接近1，表示越相似。
 
 ## Install
 
