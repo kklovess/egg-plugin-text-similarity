@@ -44,16 +44,18 @@ async function boundNorm(vector) {
 }
 
 class CosineSimilarityService extends Service {
+
     /**
      * 获取文本相似度
-     * @param {String} doc1
-     * @param {String} doc2
+     * @param {String} doc1 要比较的文档1
+     * @param {String} doc2 要比较的文档2
+     * @param {Number} [topN=20] 提取关键词数量(默认20)
      */
-    async getSimilarity(doc1, doc2) {
+    async getSimilarity(doc1, doc2, topN = 20) {
         doc1 = doc1.trim();
         doc2 = doc2.trim();
-        const cuts1 = jieba.cutHMM(doc1);
-        const cuts2 = jieba.cutHMM(doc2);
+        const cuts1 = jieba.extract(doc1, topN);
+        const cuts2 = jieba.extract(doc2, topN);
         // 合并关键字
         const allWords = [...new Set(cuts1.concat(cuts2))];
         // 获取词频

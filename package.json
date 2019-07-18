@@ -1,9 +1,9 @@
 {
-    "name": "egg-plugin-cosine-similarity",
+    "name": "egg-plugin-text-similarity",
     "version": "1.0.0",
     "description": "Calculate text similarity ",
     "eggPlugin": {
-        "name": "cosineSimilarity"
+        "name": "textSimilarity"
     },
     "keywords": [
         "egg",
@@ -46,12 +46,12 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/eggjs/egg-plugin-cosine-similarity.git"
+        "url": "git+https://github.com/eggjs/egg-plugin-text-similarity.git"
     },
     "bugs": {
         "url": "https://github.com/eggjs/egg/issues"
     },
-    "homepage": "https://github.com/eggjs/egg-plugin-cosine-similarity#readme",
+    "homepage": "https://github.com/eggjs/egg-plugin-text-similarity#readme",
     "author": "fanlikun",
     "license": "MIT"
 }

@@ -3,11 +3,11 @@
 const mock = require('egg-mock');
 const assert = require('assert');
 
-describe('test/plugin-cosine-similarity.test.js', () => {
+describe('test/plugin-text-similarity.test.js', () => {
     let app;
     before(() => {
         app = mock.app({
-            baseDir: 'apps/plugin-cosine-similarity-test',
+            baseDir: 'apps/plugin-text-similarity-test',
         });
         return app.ready();
     });
@@ -18,7 +18,7 @@ describe('test/plugin-cosine-similarity.test.js', () => {
     it('should GET /', () => {
         return app.httpRequest()
             .get('/')
-            .expect('hi, cosineSimilarity')
+            .expect('hi,textSimilarity')
             .expect(200);
     });
 
