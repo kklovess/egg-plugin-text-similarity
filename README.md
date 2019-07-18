@@ -60,9 +60,14 @@ exports.textSimilarity = {
 see [config/config.default.js](config/config.default.js) for more detail.
 
 ## Example
-
+### 1. 余弦相似度计算
 ```js
 const similarity = await this.ctx.service.cosineSimilarity.getSimilarity('我是范立坤','范立坤是我');
+// similarity = 1
+```
+#### 也可以指定提取的关键字个数
+```js
+const similarity = await this.ctx.service.cosineSimilarity.getSimilarity('我是范立坤','范立坤是我', 5);
 // similarity = 1
 ```
 
