@@ -54,8 +54,8 @@ class CosineSimilarityService extends Service {
     async getSimilarity(doc1, doc2, topN = 20) {
         doc1 = doc1.trim();
         doc2 = doc2.trim();
-        const cuts1 = jieba.extract(doc1, topN);
-        const cuts2 = jieba.extract(doc2, topN);
+        const cuts1 = jieba.extract(doc1, topN).map(w => w.word);
+        const cuts2 = jieba.extract(doc2, topN).map(w => w.word);
         // 合并关键字
         const allWords = [...new Set(cuts1.concat(cuts2))];
         // 获取词频
